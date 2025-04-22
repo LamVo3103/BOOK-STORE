@@ -595,3 +595,24 @@ window.onscroll = function () {
         });
     }
   });
+
+
+  // footer
+
+  document.querySelectorAll('.mobile-collapsible h3').forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      if (content) {
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+      }
+    });
+  });
+
+
+  // gio hang
+
+  document.querySelectorAll('.mobile-collapsible h3').forEach((header) => {
+    header.addEventListener('click', () => {
+      header.parentElement.classList.toggle('active');
+    });
+  });

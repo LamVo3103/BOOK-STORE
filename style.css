@@ -724,6 +724,39 @@
   .footer-container .logo {
     margin: 20px auto auto;
   }
+
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      display: block;
+      width: 95%;
+    }
+  
+    .footer-column-left,
+    .footer-column-right {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .mobile-hide {
+      display: none;
+    }
+  
+    .mobile-collapsible h3 {
+      cursor: pointer;
+      color: #007bff;
+    }
+  
+    .logo {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .credits {
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  
   
   /* Credits */
   

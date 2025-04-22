@@ -19,7 +19,7 @@
           <h1>Nhà Sách ABC</h1>
         </div>
       </a>
-    
+
       <nav class="nav-menu">
         <ul>
           <li><a href="index.html" style="color: #fbbf24">Trang Chủ</a></li>
@@ -27,7 +27,7 @@
           <li><a href="#footer">Liên Hệ</a></li>
         </ul>
       </nav>
-    
+
       <!-- Bỏ search-cart và user-actions vào 1 container chung -->
       <div class="header-right">
         <div class="search-cart">
@@ -35,7 +35,7 @@
           <button>Tìm</button>
           <a href="#" class="cart">🛒</a>
         </div>
-    
+
         <div class="user-actions">
           <div class="auth-dropdown">
             <button class="auth-btn" id="userMenuBtn">
@@ -43,15 +43,17 @@
             </button>
             <div class="auth-dropdown-content">
               <a href="account.html"><i class="fas fa-user"></i> Tài khoản</a>
-              <a href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
-              <a href="#" id="logoutLink"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+              <a href="giohang.html"
+                ><i class="fas fa-shopping-cart"></i> Giỏ hàng</a
+              >
+              <a href="#" id="logoutLink"
+                ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a
+              >
             </div>
           </div>
         </div>
       </div>
     </header>
-    
-    
 
     <!-- Main Container -->
     <div class="container">
@@ -304,37 +306,40 @@
             />
           </div>
         </div>
-        <a href="dichvu.html">
-          <div class="footer-column-right">
-              <h3>DỊCH VỤ</h3>
-              <br
-              <p>Điều khoản sử dụng</p>
-              <p>Chính sách bảo mật thông tin cá nhân</p>
-              <p>Chính sách bảo mật thanh toán</p>
-              <p>Giới thiệu</p>
-              <p>Hệ thống trung tâm - nhà sách</p>
-            </div>
-        </a>
-        <a href="chinhsach.html">
-          <div class="footer-column-right">
-              <h3>HỖ TRỢ</h3>
-              <br>
-              <p>Chính sách đổi - trả - hoàn tiền</p>
-              <p>Chính sách bảo hành - bồi hoàn</p>
-              <p>Chính sách vận chuyển</p>
-              <p>Chính sách khách sỉ</p>
-            </div>
-        </a>
-        <a href="login.html">
-          <div class="footer-column-right">
-              <h3>TÀI KHOẢN CỦA TÔI</h3>
-              <br>
-              <p>Đăng nhập / Tạo mới tài khoản</p>
-              <p>Thay đổi địa chỉ khách hàng</p>
-              <p>Chi tiết tài khoản</p>
-              <p>Giỏ hàng</p>
-            </div>
-        </a>
+        <!-- Dịch vụ -->
+        <div class="footer-column-right mobile-collapsible">
+          <h3 onclick="location.href='dichvu.html'">DỊCH VỤ</h3>
+          <div class="mobile-hide">
+            <p>Điều khoản sử dụng</p>
+            <p>Chính sách bảo mật thông tin cá nhân</p>
+            <p>Chính sách bảo mật thanh toán</p>
+            <p>Giới thiệu</p>
+            <p>Hệ thống trung tâm - nhà sách</p>
+          </div>
+        </div>
+
+        <!-- Chính sách -->
+        <div class="footer-column-right mobile-collapsible">
+          <h3 onclick="location.href='chinhsach.html'">HỖ TRỢ</h3>
+          <div class="mobile-hide">
+            <p>Chính sách đổi - trả - hoàn tiền</p>
+            <p>Chính sách bảo hành - bồi hoàn</p>
+            <p>Chính sách vận chuyển</p>
+            <p>Chính sách khách sỉ</p>
+          </div>
+        </div>
+
+        <!-- Tài khoản -->
+        <div class="footer-column-right mobile-collapsible">
+          <h3 onclick="location.href='login.html'">TÀI KHOẢN CỦA TÔI</h3>
+          <div class="mobile-hide">
+            <p>Đăng nhập / Tạo mới tài khoản</p>
+            <p>Thay đổi địa chỉ khách hàng</p>
+            <p>Chi tiết tài khoản</p>
+            <p>Giỏ hàng</p>
+          </div>
+        </div>
+
         <div class="footer-column-right">
           <h3>LIÊN HỆ</h3>
           <i class="fas fa-map-marker-alt fa-lg"></i>
@@ -375,6 +380,6 @@
       </div>
     </footer>
   </body>
-  
+
   <script src="script.js"></script>
 </html>
